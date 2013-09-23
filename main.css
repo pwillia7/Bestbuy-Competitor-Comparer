@@ -1,0 +1,147 @@
+@charset 'UTF-8';
+
+body{
+font-family: 'Carrois Gothic', sans-serif;
+}
+#wrapper{
+width: 900px;
+margin: 0 auto;
+background: ghostwhite;
+border: solid 4px #a4c3ca;
+border-radius: 40px;
+min-height: 400px;
+height: auto !important;
+height: 400px;
+overflow: auto;
+}
+.content{
+  margin: 0 auto;
+  width: 550px;
+  margin-bottom: 20px;
+}
+#title{
+  width: 400px;
+  margin: 0 auto;
+  font-size: 26px;
+  padding: 8px;
+}
+.resultcontainer {
+  float: left; 
+  border: 3px double #a4c3ca; 
+  margin: 1px 10px; 
+  color: black; 
+  background: ghostwhite;
+  width: 810px;
+  clear: left;
+  padding: 5px;
+  border-radius: 20px;
+}
+.title{
+  font-size: 18px;
+  max-width: 715px;
+  margin: 10px 0 0 5px;
+  margin: 0 auto;
+  float: left;
+}
+.retailer{
+  color: black;
+  margin-left: 720px;
+  float: right;
+}
+.price{
+  color: green;
+  font-size: 20px;
+  margin-left: 720px;
+  float: right;
+}
+.link{
+  color: darkred;
+  text-decoration: none;
+  margin-left: 720px;
+  float: right;
+}
+#search{
+  background: ghostwhite;
+  background-image: -moz-linear-gradient(#fff, #d4e8ec);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #e5e8ec),color-stop(1, #fff));
+  border-radius: 35px;
+  border-width: 7px;
+  border-style: double;
+  border-color: #93afb7;            
+  width: 500px;
+  height: 35px;
+  padding: 15px;
+  margin: 0 auto 25px;
+  overflow: hidden; /* Clear floats */
+}
+
+#searchbox
+{
+  outline: 0;
+  float: left;
+  padding: 5px 9px;
+  height: 23px;
+  width: 380px;
+  border: 1px solid #a4c3ca;
+  font: normal 13px 'trebuchet MS', arial, helvetica;
+  background: #f1f1f1;
+  
+  -moz-border-radius: 50px 3px 3px 50px;
+   border-radius: 50px 3px 3px 50px;
+   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#searchbutton
+{   
+  float: left;
+  background: #6cbb6b;
+  background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6cbb6b),color-stop(1, #95d788));
+  
+  -moz-border-radius: 3px 50px 50px 3px;
+  border-radius: 3px 50px 50px 3px;
+  
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7eba7c #578e57 #447d43;
+  
+   -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;      
+
+  height: 35px;
+  margin: 0 0 0 10px;
+        padding: 0;
+  width: 90px;
+  cursor: pointer;
+  font: bold 14px Arial, Helvetica;
+  color: #23441e;
+  
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#searchbutton:hover
+{   
+  background: #95d788;
+  background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+  background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+} 
+
+#searchbutton:active
+{   
+  background: #95d788;
+  outline: none;
+   
+   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;    
+}
+
+#searchbutton::-moz-focus-inner
+{
+       border: 0;  /* Small centering fix for Firefox */
+}   
