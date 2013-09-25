@@ -4,6 +4,7 @@
         <title>BestBuy Price Matching Helper</title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
+        <script src="mustache.js"></script>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="main.js"></script>
@@ -18,6 +19,7 @@
             <input id="searchbutton" type="submit" value="GO!" />
         </div>
         <div class="content">Did you know that BestBuy recently started offering instore price matching for several online retailers?<br><br>This site is intended to help you find competitor's prices easily. The majority of retailers are included, but a few are ommitted. Enjoy!</div>
+        <div id="results">  </div>
     </div>
 <script>
     document.getElementById("searchbutton").onclick = function() {
