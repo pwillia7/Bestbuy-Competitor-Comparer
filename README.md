@@ -1,7 +1,8 @@
 This is a quick project to quickly find lower BestBuy competitor prices. 
 
-Just enter the identifier code (UPC, EAN, ISBN) and search to retrieve results with
-prices and links to BestBuy competitor's products.
+Just enter a BestBuy.com URL and this will find competitor's products BestBuy price
+matches with.
+
 
 Still plenty to do!
 
