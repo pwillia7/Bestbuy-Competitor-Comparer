@@ -6,7 +6,7 @@ function search(){
 		
 		url: "https://us.api.invisiblehand.co.uk/v1/products?identifier="+searchTerm+"&include_pages=true&app_id=b99c5cf8&app_key=35c6118f97a3e2eedeeca5251fa5049e&size=100",
 		success: function(data, textStatus, jqXHR) {
-			
+			$( ".result" ).remove();
 			//eliminate unimportant retailers
 			for( var i in data.results[0].pages ){
 				var retailerName= data.results[0].pages[i].retailer_name.toLowerCase();
