@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BestBuy Price Matching Helper</title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
+        <title>BestBuy Price Matching Helper</title>
         <script src="mustache.js"></script>
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -12,15 +12,21 @@
         <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-            <div id="wrapper">
+        <div id="wrapper">
             <div id="title">BestBuy Price Matching Helper</div>
-        <div id="search">
-            <input id="searchbox" type="text" placeholder="Enter Search Here" />
-            <input id="searchbutton" type="submit" value="GO!" />
+            <div id="search">
+                <input id="searchbox" type="text" placeholder="Enter Search Here" />
+                <input id="searchbutton" type="submit" value="GO!" />
+            </div>
+            <div id="loadingDiv"></div>
+            <div id="content">
+
+                Did you know that BestBuy recently started offering instore price matching for several online retailers?<br><br>This site is intended to help you find competitor's prices easily. Just enter a BestBuy.com URL and we'll do the rest!  The majority of retailers are included, but a few are ommitted. Enjoy!
+
+            </div>
+            <div id="results">  
+            </div>
         </div>
-        <div class="content">Did you know that BestBuy recently started offering instore price matching for several online retailers?<br><br>This site is intended to help you find competitor's prices easily. Just enter an identifier number (UPC,EAN,ISBN) and we'll find you the lowest price-match!  The majority of retailers are included, but a few are ommitted. Enjoy!</div>
-        <div id="results">  </div>
-    </div>
 <script>
     document.getElementById("searchbutton").onclick = function() {
         search();
@@ -32,6 +38,18 @@
         search();
     }
 });
+
+    $('#loadingDiv')
+    .hide()  // hide it initially
+    .ajaxStart(function() {
+        $(this).show();
+        $('#content').hide();
+    })
+    .ajaxStop(function() {
+        $(this).hide();
+        $('#content').show();
+    })
+;
 </script>
     </body>
 </html>

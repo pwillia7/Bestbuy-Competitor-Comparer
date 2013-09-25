@@ -8,6 +8,15 @@ a:active {color:#0000FF;}  /* selected link */
 body{
 font-family: 'Carrois Gothic', sans-serif;
 }
+#loadingDiv{
+  background: url(loading.gif);
+  position: static;
+  display: none;
+  height: 200px;
+  width: 200px;
+  background-size: 100%;
+  margin: 0 auto;
+}
 #wrapper{
 width: 900px;
 margin: 0 auto;
@@ -19,7 +28,7 @@ height: auto !important;
 height: 400px;
 overflow: auto;
 }
-.content{
+#content{
   margin: 0 auto;
   width: 550px;
   margin-bottom: 20px;
@@ -50,6 +59,7 @@ padding-left: 2px;
 margin: 0 auto;
 }
 .result{
+background: #FFFAFA;
 width: 500px;
 margin: 0 auto;
 min-height: 180px;
@@ -57,6 +67,7 @@ border: solid #a4c3ca;
 border-radius: 20px;
 padding: 15px;
 margin-bottom: 10px;
+font-family: Arial, Helvetica, sans-serif;
 }
 .resultcontainer {
   float: left; 
@@ -82,10 +93,11 @@ margin-bottom: 10px;
   float: right;
   font-size: 30px;
   clear: right;
+  padding-top: 30px;
 }
 .price{
   color: green;
-  font-size: 20px;
+  font-size: 30px;
   float: right;
   clear: right;
   margin: 12px;

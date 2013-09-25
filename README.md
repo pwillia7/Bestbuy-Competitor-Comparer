@@ -7,3 +7,5 @@ Still plenty to do!
 
 Check out the preview here:
 http://htmlpreview.github.io/?https://github.com/pwillia7/Bestbuy-Competitor-Comparer/blob/master/index.html
+
+![alt tag](https://raw.github.com/pwillia7/Bestbuy-Competitor-Comparer/master/screenshot.png)
