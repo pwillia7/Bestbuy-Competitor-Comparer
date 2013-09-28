@@ -34,10 +34,11 @@ overflow: auto;
 }
 #title{
   text-align: center;
-  font-size: 82px;
+  font-size: 78px;
   padding: 8px;
   font-weight: 500;
   color: #232B2B;
+  padding-top: 20px;
   opacity: .9;
 }
 .image{
@@ -83,31 +84,37 @@ font-weight: 400;
 }
 .title{
   font-size: 22px;
+  font-weight: 500; 
   width: 500px;
   margin: 0 auto;
   float: left;
   clear: both;
-  padding: 20px;
+  padding-bottom: 20px;
+  font-family: Helvetica;
 
 }
 .retailer{
   float: right;
   font-size: 30px;
   clear: right;
+  margin-top: 10px;
 }
 .price{
   font-size: 30px;
   float: right;
   clear: right;
-  margin: 12px 0px;
-  font-weight: 500;
+  margin: 40px 0 0px 0px;
+  font-weight: 100;
+  font-family: Helvetica;
+  text-shadow: -1px 1px rgba(51, 113, 71, 0.4);
+  color: #78AB46;
 }
 .link{
  
   float: right;
   clear: right;
+  padding-top: 10px;
   font-size: 25px;
-  padding-top: 35px;
 }
 #search{     
   height: 35px;
