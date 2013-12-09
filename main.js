@@ -22,7 +22,7 @@ function search(){
 						title:		currentResult.title.slice(0,80)
 				};
 				//define result template
-				var resultTemplate = "<div class=\"result\"><div class=\"title\">{{title}}</div><div class=\"imageContainer\" style=\"background-image: url(\'{{image}}\');\"></div><div class=\"retailer\">{{retailer}}</div><div class=\"price\">${{price}}</div><div class=\"link\"><a href=\"{{link}}\">Click Here!</a></div></div>";
+				var resultTemplate = "<div class=\"result\"><div class=\"title\">{{title}}</div><div class=\"imageContainer\" style=\"background-image: url(\'{{image}}\');\"></div><div class=\"retailer\">{{retailer}}</div><div class=\"price\">${{price}}</div><div class=\"link\"><a href=\"{{link}}\">1 Here!</a></div></div>";
 				//inject result template
 				var injectResult = Mustache.to_html(resultTemplate, result);
 				$('#results').append(injectResult);
@@ -30,5 +30,11 @@ function search(){
 				
 			}
 			}
+		},
+		error: function(jqXHR, textStatus, errorThrown){
+			$( ".result" ).remove();
+			var resultTemplate = "<div class='error'>Sorry, there was an error. Please try again.</div>";
+			var injectResult = Mustache.to_html(resultTemplate, result);
+			$('#results').append(injectResult);
 		}
 });}

@@ -10,6 +10,7 @@
         <script src="main.js"></script>
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200' rel='stylesheet' type='text/css'>
+        
     </head>
     <body>
             <div id="header"></div>
@@ -35,10 +36,10 @@
 
     $('#searchbox').bind('keyup', function(e) {
 
-    if ( e.keyCode === 13 ) {
-        search();
-    }
-});
+        if ( e.keyCode === 13 ) {
+            search();
+        }
+    });
 
     $('#loadingDiv')
     .hide()  // hide it initially
